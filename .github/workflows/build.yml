@@ -74,8 +74,9 @@ jobs:
 
     strategy:
       matrix:
-        scheme: ["default", "rootless", "roothide", "bootstrap"]
-
+        # scheme: ["default", "rootless", "roothide", "bootstrap"]
+        scheme: ["rootless", "roothide", "bootstrap"]
+        
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
